@@ -1,26 +1,34 @@
 import React from "react";
 import { NavLink } from "react-router";
+import star from "../image/star.png";
+import dwn from "../image/dwn.png";
 
 const SingleApp = ({ app }) => {
-  const { size, reviews, ratingAvg } = app;
+  const { size, reviews, image, ratingAvg, title, companyName, downloads } = app;
 
   return (
-    <div className="bg-base-100 shadow-md rounded-xl overflow-hidden">
+    <div className="bg-white shadow-md rounded-xl overflow-hidden py-3 px-3">
       <figure className="h-56">
         <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+          src={image}
           alt="App"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rounded-lg"
         />
       </figure>
-      <div className="p-5">
-        <h2 className="text-xl font-semibold">App size: {size}</h2>
-        <p className="text-gray-500 mt-2 text-sm">
-          A card component has a figure, a body part, and inside body there are
-          title and actions parts.
-        </p>
-        <div className="flex justify-end mt-3">
-          <NavLink to = "/app" className="btn btn-primary">Buy Now</NavLink>
+      <div className="py-2">
+        <h2 className="text-xl font-semibold flex text-black">
+          {companyName}:<span>{title}</span>
+        </h2>
+
+        <div className="flex justify-between items-center mt-3">
+          <div className="flex justify-between gap-3 items-center bg-gray-300 rounded-lg py-1 px-2">
+            <img src={dwn} alt="" />
+            <p className="text-green-600 font-bold">{downloads}</p>
+          </div>
+          <div className="flex justify-between gap-3 bg-gray-300 rounded-lg py-1 px-2 items-center">
+            <img src={star} alt="" />
+            <p className="text-orange-700 font-bold">{ratingAvg}</p>
+          </div>
         </div>
       </div>
     </div>
