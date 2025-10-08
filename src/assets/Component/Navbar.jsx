@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router";
 import logo from "../image/logo.png";
-import github from "../image/github.png"
+import github from "../image/github.png";
 const Navbar = () => {
   return (
-    <div >
+    <div>
       <div className="navbar bg-base-100 py-6 ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -29,9 +29,9 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-             <li>Home</li>
-             <li>Apps</li>
-             <li>Installation</li>
+              <li>Home</li>
+              <li>Apps</li>
+              <li>Installation</li>
             </ul>
           </div>
           <NavLink to={"/home"} className="btn btn-ghost text-xl">
@@ -43,18 +43,51 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal">
-            <NavLink to={"/home"} className="px-4">Home</NavLink>
-            <NavLink to={"/home"} className="px-4">App</NavLink>
-            <NavLink to={"/home"} className="px-4">Installation</NavLink>
+            <NavLink
+              to="/home"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-purple-600 font-bold px-4"
+                  : "text-white font-semibold px-4"
+              }
+            >
+              Home
+            </NavLink>
+
+            <NavLink
+              to="/app"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-purple-600 font-bold px-4"
+                  : "text-white font-semibold px-4"
+              }
+            >
+              App
+            </NavLink>
+
+            <NavLink
+              to="/installtion"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-purple-600 font-bold px-4"
+                  : "text-white font-semibold px-4"
+              }
+            >
+              Installation
+            </NavLink>
           </ul>
         </div>
         <div className="navbar-end">
-          <NavLink to={""}>
-            <div className="bg-purple-700 text-white flex gap-4 px-4 py-2 rounded-lg
-            "><img src={github} alt="" />
-              <p>Contribute</p></div>     
-          </NavLink>
-        </div> 
+          <a href="https://github.com/mdMahfuzAhmedony">
+            <div
+              className="bg-purple-700 text-white flex gap-4 px-4 py-2 rounded-lg
+            "
+            >
+              <img src={github} alt="" />
+              <p>Contribute</p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   );

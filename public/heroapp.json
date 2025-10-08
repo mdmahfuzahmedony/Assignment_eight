@@ -1,0 +1,362 @@
+[
+  {
+    "image": "appstore/googleplay.png",
+    "title": "ChatEase",
+    "companyName": "SmartSoft Inc.",
+    "id": 1,
+    "description": "AI-powered messaging app with real-time translation and smart replies.",
+    "size": 54,
+    "reviews": 12400,
+    "ratingAvg": 4.6,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 10750 }
+    ]
+  },
+  {
+    "image": "appstore/musicwave.png",
+    "title": "MusicWave",
+    "companyName": "EchoStream Ltd.",
+    "id": 2,
+    "description": "Stream, download, and share your favorite tracks with personalized playlists.",
+    "size": 88,
+    "reviews": 85400,
+    "ratingAvg": 4.3,
+    "downloads": 20000000,
+    "ratings": [
+      { "name": "1 star", "count": 1900 },
+      { "name": "2 star", "count": 3100 },
+      { "name": "3 star", "count": 8500 },
+      { "name": "4 star", "count": 20000 },
+      { "name": "5 star", "count": 51900 }
+    ]
+  },
+  {
+    "image": "appstore/picfix.png",
+    "title": "PicFix",
+    "companyName": "VisualPro Studio",
+    "id": 3,
+    "description": "Professional photo editor with AI filters and one-tap background remover.",
+    "size": 67,
+    "reviews": 42400,
+    "ratingAvg": 4.7,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 3400 },
+      { "name": "4 star", "count": 9500 },
+      { "name": "5 star", "count": 27500 }
+    ]
+  },
+  {
+    "image": "appstore/gamehub.png",
+    "title": "GameHub",
+    "companyName": "NextPlay Studio",
+    "id": 4,
+    "description": "A collection of mini-games, challenges, and tournaments in one place.",
+    "size": 120,
+    "reviews": 214000,
+    "ratingAvg": 4.5,
+    "downloads": 75000000,
+    "ratings": [
+      { "name": "1 star", "count": 7500 },
+      { "name": "2 star", "count": 12000 },
+      { "name": "3 star", "count": 28000 },
+      { "name": "4 star", "count": 52000 },
+      { "name": "5 star", "count": 114500 }
+    ]
+  },
+  {
+    "image": "appstore/fittrack.png",
+    "title": "FitTrack",
+    "companyName": "ActivePulse Inc.",
+    "id": 5,
+    "description": "Track workouts, steps, and calories with detailed analytics and goals.",
+    "size": 93,
+    "reviews": 76500,
+    "ratingAvg": 4.8,
+    "downloads": 34000000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 16000 },
+      { "name": "5 star", "count": 56300 }
+    ]
+  },
+  {
+    "image": "appstore/todohero.png",
+    "title": "TodoHero",
+    "companyName": "Taskify Co.",
+    "id": 6,
+    "description": "Simple and beautiful task manager with cloud sync and reminders.",
+    "size": 40,
+    "reviews": 14500,
+    "ratingAvg": 4.4,
+    "downloads": 8000000,
+    "ratings": [
+      { "name": "1 star", "count": 450 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 2200 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 8150 }
+    ]
+  },
+  {
+    "image": "appstore/camerago.png",
+    "title": "CameraGo",
+    "companyName": "VisionEdge",
+    "id": 7,
+    "description": "Capture stunning photos with pro manual controls and HDR+ mode.",
+    "size": 108,
+    "reviews": 92000,
+    "ratingAvg": 4.2,
+    "downloads": 27000000,
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 22000 },
+      { "name": "5 star", "count": 53000 }
+    ]
+  },
+  {
+    "image": "appstore/shopifyx.png",
+    "title": "ShopifyX",
+    "companyName": "QuickCart Inc.",
+    "id": 8,
+    "description": "Shop the best deals and trending products from around the world.",
+    "size": 75,
+    "reviews": 124000,
+    "ratingAvg": 4.1,
+    "downloads": 58000000,
+    "ratings": [
+      { "name": "1 star", "count": 6200 },
+      { "name": "2 star", "count": 9000 },
+      { "name": "3 star", "count": 16000 },
+      { "name": "4 star", "count": 34000 },
+      { "name": "5 star", "count": 58600 }
+    ]
+  },
+  {
+    "image": "appstore/learnit.png",
+    "title": "LearnIt",
+    "companyName": "EduSoft Global",
+    "id": 9,
+    "description": "Interactive learning platform for coding, design, and business skills.",
+    "size": 110,
+    "reviews": 178000,
+    "ratingAvg": 4.9,
+    "downloads": 44000000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 3200 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 164300 }
+    ]
+  },
+  {
+    "image": "appstore/travelgo.png",
+    "title": "TravelGo",
+    "companyName": "SkyTrip Agency",
+    "id": 10,
+    "description": "Find cheap flights, book hotels, and explore destinations with ease.",
+    "size": 95,
+    "reviews": 62000,
+    "ratingAvg": 4.3,
+    "downloads": 21000000,
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 3800 },
+      { "name": "3 star", "count": 7400 },
+      { "name": "4 star", "count": 15000 },
+      { "name": "5 star", "count": 33300 }
+    ]
+  },
+  {
+    "image": "appstore/focusme.png",
+    "title": "FocusMe",
+    "companyName": "MindSpace Apps",
+    "id": 11,
+    "description": "Block distractions and boost productivity with focus timers and reports.",
+    "size": 56,
+    "reviews": 15800,
+    "ratingAvg": 4.5,
+    "downloads": 6200000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 4800 },
+      { "name": "5 star", "count": 10300 }
+    ]
+  },
+  {
+    "image": "appstore/driveguard.png",
+    "title": "DriveGuard",
+    "companyName": "SafeRoads Tech",
+    "id": 12,
+    "description": "Monitor driving behavior and get safety alerts with GPS tracking.",
+    "size": 80,
+    "reviews": 25400,
+    "ratingAvg": 4.6,
+    "downloads": 12000000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 15400 }
+    ]
+  },
+  {
+    "image": "appstore/newsly.png",
+    "title": "Newsly",
+    "companyName": "BrightDaily Media",
+    "id": 13,
+    "description": "Stay updated with breaking news, podcasts, and live trends worldwide.",
+    "size": 68,
+    "reviews": 47000,
+    "ratingAvg": 4.2,
+    "downloads": 19000000,
+    "ratings": [
+      { "name": "1 star", "count": 1800 },
+      { "name": "2 star", "count": 2500 },
+      { "name": "3 star", "count": 6000 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 24700 }
+    ]
+  },
+  {
+    "image": "appstore/bookify.png",
+    "title": "Bookify",
+    "companyName": "WordNest",
+    "id": 14,
+    "description": "Discover, read, and review books from thousands of genres online.",
+    "size": 72,
+    "reviews": 38500,
+    "ratingAvg": 4.7,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2600 },
+      { "name": "4 star", "count": 7000 },
+      { "name": "5 star", "count": 27400 }
+    ]
+  },
+  {
+    "image": "appstore/fashionfit.png",
+    "title": "FashionFit",
+    "companyName": "TrendyBay",
+    "id": 15,
+    "description": "Try virtual outfits, mix & match, and shop top fashion brands.",
+    "size": 115,
+    "reviews": 69000,
+    "ratingAvg": 4.4,
+    "downloads": 29000000,
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 4200 },
+      { "name": "3 star", "count": 9100 },
+      { "name": "4 star", "count": 18000 },
+      { "name": "5 star", "count": 35200 }
+    ]
+  },
+  {
+    "image": "appstore/securevault.png",
+    "title": "SecureVault",
+    "companyName": "DataLock Systems",
+    "id": 16,
+    "description": "Protect passwords, notes, and documents with end-to-end encryption.",
+    "size": 48,
+    "reviews": 26400,
+    "ratingAvg": 4.8,
+    "downloads": 8000000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 19600 }
+    ]
+  },
+  {
+    "image": "appstore/streammax.png",
+    "title": "StreamMax",
+    "companyName": "VisionCast Media",
+    "id": 17,
+    "description": "Stream movies and TV shows in HD with personalized recommendations.",
+    "size": 130,
+    "reviews": 182000,
+    "ratingAvg": 4.5,
+    "downloads": 80000000,
+    "ratings": [
+      { "name": "1 star", "count": 8000 },
+      { "name": "2 star", "count": 11000 },
+      { "name": "3 star", "count": 26000 },
+      { "name": "4 star", "count": 55000 },
+      { "name": "5 star", "count": 82000 }
+    ]
+  },
+  {
+    "image": "appstore/foodio.png",
+    "title": "Foodio",
+    "companyName": "TasteNow Ltd.",
+    "id": 18,
+    "description": "Order food from nearby restaurants with fast delivery and discounts.",
+    "size": 78,
+    "reviews": 126000,
+    "ratingAvg": 4.2,
+    "downloads": 56000000,
+    "ratings": [
+      { "name": "1 star", "count": 5800 },
+      { "name": "2 star", "count": 8400 },
+      { "name": "3 star", "count": 14600 },
+      { "name": "4 star", "count": 25600 },
+      { "name": "5 star", "count": 71300 }
+    ]
+  },
+  {
+    "image": "appstore/mindzen.png",
+    "title": "MindZen",
+    "companyName": "Calmverse",
+    "id": 19,
+    "description": "Meditation and sleep sounds app designed to reduce stress and anxiety.",
+    "size": 63,
+    "reviews": 34500,
+    "ratingAvg": 4.9,
+    "downloads": 12000000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 3600 },
+      { "name": "5 star", "count": 29400 }
+    ]
+  },
+  {
+    "image": "appstore/sportify.png",
+    "title": "Sportify",
+    "companyName": "FitArena Tech",
+    "id": 20,
+    "description": "Follow live sports, scores, highlights, and exclusive player stats.",
+    "size": 85,
+    "reviews": 91000,
+    "ratingAvg": 4.3,
+    "downloads": 32000000,
+    "ratings": [
+      { "name": "1 star", "count": 2700 },
+      { "name": "2 star", "count": 3500 },
+      { "name": "3 star", "count": 7800 },
+      { "name": "4 star", "count": 16000 },
+      { "name": "5 star", "count": 60700 }
+    ]
+  }
+]
