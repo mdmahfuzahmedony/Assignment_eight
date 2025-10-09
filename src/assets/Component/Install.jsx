@@ -3,7 +3,6 @@ import star from "../image/star.png";
 import dwn from "../image/dwn.png";
 
 const Install = ({ app }) => {
-  console.log(app);
 
   return (
     <div>

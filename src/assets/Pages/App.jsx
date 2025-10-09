@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Allapps from "./Allapps";
 import useHeroApp from "../Hook/useHeroApp";
-
+import found from "../image/notfound.png"
 const App = () => {
-  const { app, loading } = useHeroApp(); // ✅ loading ও নিচ্ছি
-  const [searchTerm, setSearchTerm] = useState(""); // ✅ useState ঠিক করা হয়েছে
+  const { app, loading } = useHeroApp(); 
+  const [searchTerm, setSearchTerm] = useState(""); 
 
 
 
@@ -13,15 +13,14 @@ const App = () => {
     singleApp.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  console.log(filteredApps);
 
-  // 🕐 Loading state দেখানোর জন্য
+ 
   if (loading) {
     return <h1 className="text-center text-xl font-semibold mt-20">Loading...</h1>;
   }
 
   return (
-    <div className="text-center px-4">
+    <div className="text-center px-4 ">
       {/* ---------- Heading ---------- */}
       <h1 className="text-[40px] font-bold mt-10">Our All Applications</h1>
       <p className="text-[18px] font-light text-[#627382] mt-2">
@@ -29,12 +28,12 @@ const App = () => {
       </p>
 
       {/* ---------- Search Bar & Count ---------- */}
-      <div className="flex flex-col md:flex-row justify-between items-center gap-4 mt-8">
-        <p className="text-gray-700 font-medium">
-          <span>({filteredApps.length})</span> Apps Found
+      <div className="flex flex-col md:flex-row justify-between  items-center gap-4 mt-8 max-w-[1300px] mx-auto">
+        <p className="text-white font-medium">
+          <span className="text-white">({filteredApps.length})</span> Apps Found
         </p>
 
-        <div className="relative w-full md:w-80">
+        <div className="relative w-full  md:w-80 max-w-[1300px]">
           <input
             type="search"
             placeholder="Search App..."
@@ -62,12 +61,15 @@ const App = () => {
       </div>
 
       {/* ---------- Apps Grid / Not Found ---------- */}
-      <div className="mt-10">
+      <div className="mt-10 ">
         {filteredApps.length > 0 ? (
           <Allapps app={filteredApps} />
         ) : (
-          <p className="text-center text-red-500 mt-10 text-lg font-semibold">
-            App not found 😢
+          <p className="flex justify-center items-center py-10">
+            <div>
+              <img src={found} alt="" />
+            </div>
+            
           </p>
         )}
       </div>

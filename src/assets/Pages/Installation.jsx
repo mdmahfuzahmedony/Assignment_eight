@@ -32,21 +32,21 @@ const Installation = () => {
   };
 
   return (
-    <div className="p-10">
+    <div className="p-10 max-w-[1300px] mx-auto">
       <h1 className="text-3xl font-bold text-center">Your Installed Apps</h1>
       <p className="text-center text-gray-500 mt-2">
         Explore All Trending Apps on the Market developed by us
       </p>
 
-      <div className="flex items-center justify-between border p-3 mt-6 rounded-md">
+      <div className="flex items-center justify-between  p-3 mt-6 rounded-md">
         <h2 className="text-xl font-semibold">
-          {installedApps.length} Apps Found
+          ({installedApps.length}) Apps Found
         </h2>
 
         <select
           value={sortOrder}
           onChange={handleSortChange}
-          className=" border-2 rounded font-bold px-3 py-1"
+          className="rounded font-bold px-3 py-1 border"
         >
           <option value="">Sort by Size</option>
           <option value="High-Low">High-Low</option>
@@ -54,16 +54,16 @@ const Installation = () => {
         </select>
       </div>
 
-      <div className="mt-5 space-y-4">
+      <div className="mt-5 space-y-4 ">
         {installedApps.length === 0 ? (
           <p>No apps installed yet.</p>
         ) : (
           installedApps.map((app) => (
             <div
               key={app.id}
-              className="flex justify-between items-center border p-4 rounded-lg shadow-sm "
+              className="flex justify-between items-center border-1 border-gray-500 p-4 rounded-lg shadow-2xs "
             >
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 ">
                 <img
                   src={app.image}
                   alt={app.title}

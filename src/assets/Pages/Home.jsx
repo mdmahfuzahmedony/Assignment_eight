@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div>
       <div className=" mx-auto">
-        <h1 className="text-center text-[72px] font-bold text-black leading-20 ">
+        <h1 className="text-center text-[72px] font-bold text-white leading-20 ">
           We Build <br /> <span className="text-purple-500">Productive</span>{" "}
           Apps
         </h1>
@@ -142,7 +142,7 @@ const Home = () => {
         </p>
       </div>
 
-      <div className="max-w-[1300px] ">
+      <div className="max-w-[1300px] mx-auto ">
         <HomeProduct></HomeProduct>
         <div className="flex justify-center items-center mt-3 mb-3">
           <NavLink

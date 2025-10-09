@@ -11,7 +11,6 @@ const useHeroApp = () => {
     axios("/heroapp.json")
       .then((res) => {
         setApp(res.data);
-        console.log(res.data);
         setError(null);
       })
       .catch((err) => setError(err))

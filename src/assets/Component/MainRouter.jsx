@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 const MainRouter = () => {
   return (
-    <div className="max-w-7xl mx-auto flex flex-col min-h-screen">
+    <div className=" mx-auto flex flex-col min-h-screen ">
       <Navbar></Navbar>
       <div className="flex-1">
         <Outlet></Outlet>

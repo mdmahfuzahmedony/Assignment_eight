@@ -70,9 +70,9 @@ const AppDetails = () => {
   };
 
   return (
-    <div className="p-6">
+    <div className="p-6 ">
       {/* ---------- App Info Section ---------- */}
-      <div className="grid grid-cols-5 gap-10 mt-20">
+      <div className="grid md:grid-cols-5 grid-cols-1 gap-10 mt-20  max-w-[1300px] mx-auto">
         {/* Left Image */}
         <div className="flex justify-center items-center">
           <img
@@ -84,20 +84,22 @@ const AppDetails = () => {
 
         {/* Middle Info */}
         <div className="col-span-2 p-4">
-          <h1 className="text-[30px] font-bold">{title}</h1>
-          <p>
+          <h1 className="text-[30px] text-center md:text-left font-bold">
+            {title}
+          </h1>
+          <p className="text-center md:text-left mt-2">
             Developed by <b>{companyName}</b>
           </p>
 
           <div className="flex gap-6 justify-start items-center mt-4">
             {/* Downloads */}
-            <div className="py-3 px-3 text-center">
+            <div className="py-3  text-center">
               <img
                 src={dwn}
                 alt="downloads"
                 className="w-[40px] h-[40px] mx-auto"
               />
-              <p className="text-[18px] mt-1">Downloads</p>
+              <p className="text-[15px] mt-1">Downloads</p>
               <p className="text-[24px] font-bold mt-1">{downloads}</p>
             </div>
 
@@ -108,7 +110,7 @@ const AppDetails = () => {
                 alt="rating"
                 className="w-[40px] h-[40px] mx-auto"
               />
-              <p className="text-[18px] mt-1">Avg Rating</p>
+              <p className="text-[15px] mt-1">Avg Rating</p>
               <p className="text-[24px] font-bold mt-1">{ratingAvg}</p>
             </div>
 
@@ -119,30 +121,32 @@ const AppDetails = () => {
                 alt="review"
                 className="w-[40px] h-[40px] mx-auto"
               />
-              <p className="text-[18px] mt-1">Reviews</p>
+              <p className="text-[15px] mt-1">Reviews</p>
               <p className="text-[24px] font-bold mt-1">{reviews}</p>
             </div>
           </div>
 
           {/* ---------- Install Button ---------- */}
-          <NavLink
-            to={"/installtion"}
-            state={{ installedApp: singleProduct }}
-            onClick={buttonChange}
-            disabled={isInstalled}
-            className={`py-2 px-4 border mt-5 rounded-[10px] font-bold transition-all duration-300 ${
-              isInstalled
-                ? "bg-purple-500 text-white cursor-not-allowed"
-                : "bg-purple-500 hover:bg-purple-600 text-white"
-            }`}
-          >
-            {isInstalled ? "Installed " : `Install Now (${size})`}
-          </NavLink>
+          <div className=" flex justify-start">
+            <NavLink
+              to={"/installtion"}
+              state={{ installedApp: singleProduct }}
+              onClick={buttonChange}
+              disabled={isInstalled}
+              className={`py-2 px-6 border rounded-[10px] font-bold transition-all duration-300 text-center w-full md:w-auto  ${
+                isInstalled
+                  ? "bg-gradient-to-r from-[#7B61FF] via-[#9D6EFF] to-[#C471ED] text-white cursor-not-allowed"
+                  : "bg-gradient-to-r from-[#7B61FF] via-[#9D6EFF] to-[#C471ED] hover:bg-purple-600 text-white"
+              }`}
+            >
+              {isInstalled ? "Installed" : `Install Now (${size})`}
+            </NavLink>
+          </div>
         </div>
       </div>
 
       {/* ---------- Chart Section ---------- */}
-      <div className="mt-10 border rounded-xl bg-gray-50 shadow-sm">
+      <div className="mt-10  rounded-xl bg-gray-50 shadow-sm max-w-[1300px] mx-auto">
         <h3 className="text-2xl font-bold mb-4 text-black ml-3">Ratings</h3>
         <div style={{ width: "100%", height: 300 }}>
           <ResponsiveContainer>
@@ -160,7 +164,7 @@ const AppDetails = () => {
         </div>
       </div>
 
-      <div className="mt-20">
+      <div className="mt-20 max-w-[1300px] mx-auto">
         <h1 className="text-[20px] font-bold">Description</h1>
         <p className="mt-5">{description}</p>
       </div>
