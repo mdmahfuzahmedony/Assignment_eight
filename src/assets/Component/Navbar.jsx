@@ -5,7 +5,7 @@ import github from "../image/github.png";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 py-6 max-w-[1300px] mx-auto ">
+      <div className="navbar bg-white py-6 max-w-[1300px] mx-auto ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -42,10 +42,10 @@ const Navbar = () => {
 
               <NavLink
                 to="/app"
-                className={({ isActive }) =>
+                className= {({ isActive }) =>
                   isActive
                     ? "text-purple-600 font-bold px-4"
-                    : "text-white font-semibold px-4"
+                    : "text-black font-semibold px-4"
                 }
               >
                 App
@@ -53,10 +53,10 @@ const Navbar = () => {
 
               <NavLink
                 to="/installtion"
-                className={({ isActive }) =>
+                className={({ isActive })  =>
                   isActive
                     ? "text-purple-600 font-bold px-4"
-                    : "text-white font-semibold px-4"
+                    : "text-black font-semibold px-4"
                 }
               >
                 Installation
@@ -77,7 +77,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? "text-purple-600 font-bold px-4"
-                  : "text-white font-semibold px-4"
+                  : "text-black font-semibold px-4"
               }
             >
               Home
@@ -88,7 +88,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? "text-purple-600 font-bold px-4"
-                  : "text-white font-semibold px-4"
+                  : "text-black font-semibold px-4"
               }
             >
               App
@@ -99,7 +99,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? "text-purple-600 font-bold px-4"
-                  : "text-white font-semibold px-4"
+                  : "text-black font-semibold px-4"
               }
             >
               Installation

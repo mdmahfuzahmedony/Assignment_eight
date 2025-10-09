@@ -70,10 +70,10 @@ const AppDetails = () => {
   };
 
   return (
-    <div className="p-6 ">
+    <div className="p-6  ">
 
       {/* ---------- App Info Section ---------- */}
-      <div className="grid md:grid-cols-5 grid-cols-1 gap-10 mt-20  max-w-[1300px] mx-auto">
+      <div className="grid md:grid-cols-5 grid-cols-1 gap-10 mt-20  max-w-[1300px] border-2 rounded-2xl border-gray-100 mx-auto">
         {/* Left Image */}
         <div className="flex justify-center items-center">
           <img
@@ -84,51 +84,51 @@ const AppDetails = () => {
         </div>
 
         {/* Middle Info */}
-        <div className="col-span-2 p-4">
-          <h1 className="text-[30px] text-center md:text-left font-bold">
+        <div className="col-span-2 p-4 ">
+          <h1 className="text-[30px] text-center md:text-left font-bold text-black">
             {title}
           </h1>
-          <p className="text-center md:text-left mt-2">
+          <p className="text-center md:text-left mt-2 font-bold text-black">
             Developed by <b>{companyName}</b>
           </p>
 
           <div className="flex gap-6 justify-start items-center mt-4">
             {/* Downloads */}
-            <div className="py-3  text-center">
+            <div className="py-3 px-2 border-2 border-gray-600 rounded-lg text-center">
               <img
                 src={dwn}
                 alt="downloads"
                 className="w-[40px] h-[40px] mx-auto"
               />
-              <p className="text-[15px] mt-1">Downloads</p>
-              <p className="text-[24px] font-bold mt-1">{downloads}</p>
+              <p className="text-[15px] mt-1 text-black font-bold">Downloads</p>
+              <p className="text-[24px] font-bold mt-1 text-black">{downloads}</p>
             </div>
 
             {/* Rating */}
-            <div className="py-3 px-3 text-center">
+            <div className="py-3 px-3 text-center border-2 border-gray-600 rounded-lg">
               <img
                 src={star}
                 alt="rating"
                 className="w-[40px] h-[40px] mx-auto"
               />
-              <p className="text-[15px] mt-1">Avg Rating</p>
-              <p className="text-[24px] font-bold mt-1">{ratingAvg}</p>
+              <p className="text-[15px] mt-1 text-black font-bold">Avg Rating</p>
+              <p className="text-[24px] font-bold mt-1 text-black">{ratingAvg}</p>
             </div>
 
             {/* Reviews */}
-            <div className="py-3 px-3 text-center">
+            <div className="py-3 px-3 text-center border-2 border-gray-600 rounded-lg">
               <img
                 src={review}
                 alt="review"
                 className="w-[40px] h-[40px] mx-auto"
               />
-              <p className="text-[15px] mt-1">Reviews</p>
-              <p className="text-[24px] font-bold mt-1">{reviews}</p>
+              <p className="text-[15px] mt-1 text-black font-bold">Reviews</p>
+              <p className="text-[24px] font-bold mt-1 text-black">{reviews}</p>
             </div>
           </div>
 
           {/* ---------- Install Button ---------- */}
-          <div className=" flex justify-start">
+          <div className=" flex justify-start mt-4">
             <NavLink
               to={"/installtion"}
               state={{ installedApp: singleProduct }}
@@ -166,8 +166,8 @@ const AppDetails = () => {
       </div>
 
       <div className="mt-20 max-w-[1300px] mx-auto">
-        <h1 className="text-[20px] font-bold">Description</h1>
-        <p className="mt-5">{description}</p>
+        <h1 className="text-[25px] font-bold text-black">Description</h1>
+        <p className="mt-5 text-gray-500">{description}</p>
       </div>
 
       {/* ---------- Toast Container ---------- */}

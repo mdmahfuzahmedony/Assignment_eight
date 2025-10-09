@@ -6,7 +6,7 @@ import { ToastContainer,} from "react-toastify";
 
 const MainRouter = () => {
   return (
-    <div className=" mx-auto flex flex-col min-h-screen ">
+    <div className=" mx-auto flex flex-col min-h-screen bg-white ">
       <Navbar></Navbar>
       <div className="flex-1">
         <Outlet></Outlet>

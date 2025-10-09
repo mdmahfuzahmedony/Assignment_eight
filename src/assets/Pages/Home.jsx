@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div>
       <div className=" mx-auto">
-        <h1 className="text-center text-[72px] font-bold text-white leading-20 ">
+        <h1 className="text-center text-[72px] font-bold text-black leading-20 ">
           We Build <br /> <span className="text-purple-500">Productive</span>{" "}
           Apps
         </h1>
@@ -28,14 +28,14 @@ const Home = () => {
         <div className="flex  gap-9 items-center justify-center mt-10">
           <NavLink
             to={"https://play.google.com/store/apps/"}
-            className="py-2 px-4 border rounded-lg flex gap-2"
+            className="py-2 px-4 border-2 bg rounded-lg flex gap-2 text-black "
           >
             <img src={googleplay} alt="" />
             Google Play
           </NavLink>
           <NavLink
             to={"https://apps.apple.com/"}
-            className="py-2 px-4 border rounded-lg flex gap-2"
+            className="py-2 px-4 border-2 rounded-lg text-black flex gap-2"
           >
             <img src={app} alt="" />
             App Store
@@ -136,8 +136,8 @@ const Home = () => {
       </div>
 
       <div className="mt-15  ">
-        <h1 className="text-center text-[40px] font-bold">Trending Apps</h1>
-        <p className="text-center mt-2">
+        <h1 className="text-center text-[40px] text-black font-bold">Trending Apps</h1>
+        <p className="text-center text-gray-500 mt-2">
           Explore All Trending Apps on the Market developed by us
         </p>
       </div>
@@ -147,7 +147,7 @@ const Home = () => {
         <div className="flex justify-center items-center mt-3 mb-3">
           <NavLink
             to={"/app"}
-            className="py-2 px-7 rounded-lg bg-purple-500 text-black"
+            className="py-2 px-7 rounded-lg bg-purple-500 text-white"
           >
             {" "}
             All Apps
