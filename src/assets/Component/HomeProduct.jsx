@@ -5,6 +5,9 @@ import SingleApp from "./singleApp";
 const HomeProduct = () => {
   const { app, error, loading } = useHeroApp();
   const treandingApp = app.slice(0, 8);
+  console.log(loading);
+  console.log(error);
+
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 ">

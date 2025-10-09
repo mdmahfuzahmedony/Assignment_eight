@@ -12,7 +12,7 @@ import {
   Tooltip,
   Bar,
 } from "recharts";
-import { ToastContainer, toast } from "react-toastify";
+import {  toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import NotFound from "../Component/NotFound";
 
@@ -71,6 +71,7 @@ const AppDetails = () => {
 
   return (
     <div className="p-6 ">
+
       {/* ---------- App Info Section ---------- */}
       <div className="grid md:grid-cols-5 grid-cols-1 gap-10 mt-20  max-w-[1300px] mx-auto">
         {/* Left Image */}
@@ -170,7 +171,7 @@ const AppDetails = () => {
       </div>
 
       {/* ---------- Toast Container ---------- */}
-      <ToastContainer />
+      {/* <ToastContainer /> */}
     </div>
   );
 };
