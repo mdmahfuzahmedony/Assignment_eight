@@ -1,14 +1,19 @@
 import { createBrowserRouter } from "react-router";
 import MainRouter from "./MainRouter";
-import Error from "./Error";
+
 import Home from "../Pages/Home";
 import App from "../Pages/App";
 import Installation from "../Pages/Installation";
+import Rechart from "../Pages/Rechart";
+import AppDetails from "../Pages/AppDetails";
+import Errorpage from "./Errorpage";
+import NotFound from "./NotFound";
+
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    errorElement:Error,
+    errorElement:<Errorpage></Errorpage>,
     Component:MainRouter,
     children:[
       {
@@ -27,6 +32,18 @@ export const router = createBrowserRouter([
         path:"/installtion",
         Component:Installation
       },
+       {
+        path:"/rechart",
+        Component:Rechart
+      },
+      {
+        path:"/apps/:id",
+        Component:AppDetails
+      },
+      {
+        path:'/apps/:id',
+        Component:NotFound
+      }
 
       
     ]

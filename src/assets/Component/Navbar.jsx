@@ -35,7 +35,7 @@ const Navbar = () => {
             </ul>
           </div>
           <NavLink to={"/home"} className="btn btn-ghost text-xl">
-            <div className="flex gap-3">
+            <div className="flex gap-3 items-center">
               <img src={logo} alt="" />
               <p className="font-bold text-purple-700 text-[16px]">HERO.IO</p>
             </div>

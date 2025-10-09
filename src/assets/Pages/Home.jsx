@@ -9,6 +9,7 @@ import num5 from "../image/num5.png";
 import num6 from "../image/num6.png";
 import iphn from "../image/Iphone.png";
 import HomeProduct from "../Component/HomeProduct";
+import { NavLink } from "react-router";
 
 const Home = () => {
   return (
@@ -25,14 +26,20 @@ const Home = () => {
           truly make an impact.
         </p>
         <div className="flex  gap-9 items-center justify-center mt-10">
-          <button className="py-2 px-4 border rounded-lg flex gap-2">
+          <NavLink
+            to={"https://play.google.com/store/apps/"}
+            className="py-2 px-4 border rounded-lg flex gap-2"
+          >
             <img src={googleplay} alt="" />
             Google Play
-          </button>
-          <button className="py-2 px-4 border rounded-lg flex gap-2">
+          </NavLink>
+          <NavLink
+            to={"https://apps.apple.com/"}
+            className="py-2 px-4 border rounded-lg flex gap-2"
+          >
             <img src={app} alt="" />
             App Store
-          </button>
+          </NavLink>
         </div>
       </div>
       <div className="container  mx-auto flex flex-col md:flex-row items-center justify-center gap-12 pt-16 relative">
@@ -100,14 +107,20 @@ const Home = () => {
 
       <div className="mt-15  ">
         <h1 className="text-center text-[40px] font-bold">Trending Apps</h1>
-        <p className="text-center mt-2">Explore All Trending Apps on the Market developed by us</p>
+        <p className="text-center mt-2">
+          Explore All Trending Apps on the Market developed by us
+        </p>
       </div>
 
       <div className="max-w-[1300px] ">
-          <HomeProduct></HomeProduct>
+        <HomeProduct></HomeProduct>
+        <div className="flex justify-center items-center mt-3 mb-3">
+          <NavLink to={"/app"} className="py-2 px-7 rounded-lg bg-purple-500 text-black">
+            {" "}
+            All Apps
+          </NavLink>
         </div>
-
-
+      </div>
     </div>
   );
 };

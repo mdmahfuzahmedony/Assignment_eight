@@ -1,5 +1,5 @@
 import React from "react";
-import useHeroApp from "../Hook/useheroapp";
+import useHeroApp from "../Hook/useHeroApp";
 import SingleApp from "./singleApp";
 
 const HomeProduct = () => {

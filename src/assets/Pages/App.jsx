@@ -1,7 +1,13 @@
-import React from "react";
 import Allapps from "./Allapps";
+import useHeroApp from "../Hook/useHeroApp";
 
 const App = () => {
+  const { app } = useHeroApp();
+  // const { searchTerm, setsearchTerm } = useState();
+
+  // const filterApp = app.filter((SingleApp) =>
+  //   SingleApp.title.toLowerCase().includes(searchTerm.toLowerCase())
+  // );
   return (
     <div>
       <div className=" text-center">
@@ -12,7 +18,7 @@ const App = () => {
 
         <div className="flex justify-between items-center">
           <p>
-            <span></span>Apps Found
+            <span>({app.length})</span> Apps Found
           </p>
           <div>
             <label className="input">
