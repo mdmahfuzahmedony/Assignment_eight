@@ -4,7 +4,7 @@ import star from "../image/star.png";
 import dwn from "../image/dwn.png";
 
 const SingleApp = ({ app }) => {
-  const { image, ratingAvg, title,  downloads,id } = app;
+  const { image, ratingAvg,title,downloads,id } = app;
 
   return (
     <NavLink to={`/apps/${id}`} className="bg-white shadow-md rounded-xl overflow-hidden py-2 px-3">

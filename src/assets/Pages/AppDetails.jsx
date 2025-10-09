@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams } from "react-router";
+import { NavLink, useParams } from "react-router";
 import useHeroApp from "../Hook/useHeroApp";
 import dwn from "../image/dwn.png";
 import star from "../image/star.png";
@@ -32,10 +32,17 @@ const AppDetails = () => {
     return <NotFound></NotFound>;
   }
 
-  const { image, title, companyName, reviews, ratingAvg, downloads, ratings, size,description } =
-    singleProduct;
-
-
+  const {
+    image,
+    title,
+    companyName,
+    reviews,
+    ratingAvg,
+    downloads,
+    ratings,
+    size,
+    description,
+  } = singleProduct;
 
   const chartData = ratings.map((r) => ({ name: r.name, count: r.count }));
 
@@ -47,6 +54,19 @@ const AppDetails = () => {
       autoClose: 2000,
       theme: "colored",
     });
+
+    // ...............localstorage
+
+    const existingApps =
+      JSON.parse(localStorage.getItem("installedApps")) || [];
+    const isAlreadyInstalled = existingApps.some(
+      (app) => app.id === singleProduct.id
+    );
+
+    if (!isAlreadyInstalled) {
+      const updatedApps = [...existingApps, singleProduct];
+      localStorage.setItem("installedApps", JSON.stringify(updatedApps));
+    }
   };
 
   return (
@@ -105,7 +125,9 @@ const AppDetails = () => {
           </div>
 
           {/* ---------- Install Button ---------- */}
-          <button
+          <NavLink
+            to={"/installtion"}
+            state={{ installedApp: singleProduct }}
             onClick={buttonChange}
             disabled={isInstalled}
             className={`py-2 px-4 border mt-5 rounded-[10px] font-bold transition-all duration-300 ${
@@ -115,7 +137,7 @@ const AppDetails = () => {
             }`}
           >
             {isInstalled ? "Installed " : `Install Now (${size})`}
-          </button>
+          </NavLink>
         </div>
       </div>
 

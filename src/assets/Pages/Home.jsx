@@ -42,18 +42,23 @@ const Home = () => {
           </NavLink>
         </div>
       </div>
+
       <div className="container  mx-auto flex flex-col md:flex-row items-center justify-center gap-12 pt-16 relative">
         <div className="flex flex-col items-center justify-center gap-7 relative -left-10 md:-left-3">
-          <img src={num1} alt="left icon 1" className="w-20 h-20" />
+          <img
+            src={num1}
+            alt="left icon 1"
+            className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 hidden md:block"
+          />
           <img
             src={num2}
             alt="left icon 2"
-            className="w-20 h-20 -translate-x-10"
+            className="w-20 h-20 -translate-x-10 hidden md:block"
           />
           <img
             src={num3}
             alt="left icon 3"
-            className="w-20 h-20 -translate-x-20"
+            className="w-20 h-20 -translate-x-20 hidden md:block"
           />
         </div>
 
@@ -66,40 +71,65 @@ const Home = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center gap-7 relative left-5 md:left-3">
-          <img src={num4} alt="right icon 1" className="w-20 h-20" />
+          <img
+            src={num4}
+            alt="right icon 1"
+            className="w-20 h-20 hidden md:block"
+          />
           <img
             src={num5}
             alt="right icon 2"
-            className="w-20 h-20 translate-x-10"
+            className="w-20 h-20 translate-x-10 hidden md:block"
           />
           <img
             src={num6}
             alt="right icon 3"
-            className="w-20 h-20 translate-x-20"
+            className="w-20 h-20 translate-x-20 hidden md:block"
           />
         </div>
       </div>
-      <div className="bg-[#8C52ED] py-15 ">
+
+      <div className="bg-gradient-to-r from-[#7B61FF] via-[#9D6EFF] to-[#C471ED] py-15 ">
         <h1 className="text-center font-bold text-[40px]">
           Trusted by Millions, Built for You
         </h1>
+        <div className="flex flex-col items-center mx-auto mt-10 px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1000px] w-full">
+            <div className="text-center  rounded-xl p-6">
+              <p className="text-[14px] sm:text-[16px] text-black">
+                Total Downloads
+              </p>
+              <h1 className="text-[48px] sm:text-[64px] lg:text-[84px] font-bold text-white leading-tight">
+                29.6M
+              </h1>
+              <p className="text-[14px] sm:text-[16px] mt-2 text-black">
+                21% more than last month
+              </p>
+            </div>
 
-        <div className="flex justify-center mx-auto mt-10">
-          <div className="grid grid-cols-3 gap-10 max-w-[1000px] w-full p-5 ">
-            <div className=" text-center">
-              <p className="text-[16px]">Total Downloads</p>
-              <h1 className="text-[84px] font-bold ">29.6M</h1>
-              <p className="text-[16px] mt-3">21% more than last month</p>
+            <div className="text-center rounded-xl p-6">
+              <p className="text-[14px] sm:text-[16px] text-black">
+                Active Users
+              </p>
+              <h1 className="text-[48px] sm:text-[64px] lg:text-[84px] font-bold text-white
+               leading-tight">
+                906K
+              </h1>
+              <p className="text-[14px] sm:text-[16px] mt-2 text-black">
+                18% more than last month
+              </p>
             </div>
-            <div className=" text-center">
-              <p className="text-[16px]">Total Downloads</p>
-              <h1 className="text-[84px] font-bold ">906K</h1>
-              <p className="text-[16px] mt-3">21% more than last month</p>
-            </div>
-            <div className=" text-center">
-              <p className="text-[16px]">Total Downloads</p>
-              <h1 className="text-[84px] font-bold ">132+</h1>
-              <p className="text-[16px] mt-3">21% more than last month</p>
+
+            <div className="text-center  rounded-xl p-6">
+              <p className="text-[14px] sm:text-[16px] text-black">
+                Apps Available
+              </p>
+              <h1 className="text-[48px] sm:text-[64px] lg:text-[84px] font-bold text-white leading-tight">
+                132+
+              </h1>
+              <p className="text-[14px] sm:text-[16px] mt-2 text-black">
+                25% more than last month
+              </p>
             </div>
           </div>
         </div>
@@ -115,7 +145,10 @@ const Home = () => {
       <div className="max-w-[1300px] ">
         <HomeProduct></HomeProduct>
         <div className="flex justify-center items-center mt-3 mb-3">
-          <NavLink to={"/app"} className="py-2 px-7 rounded-lg bg-purple-500 text-black">
+          <NavLink
+            to={"/app"}
+            className="py-2 px-7 rounded-lg bg-purple-500 text-black"
+          >
             {" "}
             All Apps
           </NavLink>
