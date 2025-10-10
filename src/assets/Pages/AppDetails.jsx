@@ -74,6 +74,7 @@ const AppDetails = () => {
 
       {/* ---------- App Info Section ---------- */}
       <div className="grid md:grid-cols-5 grid-cols-1 gap-10 mt-20  max-w-[1300px] border-2 rounded-2xl border-gray-100 mx-auto">
+        
         {/* Left Image */}
         <div className="flex justify-center items-center">
           <img

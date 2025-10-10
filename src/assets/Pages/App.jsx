@@ -8,19 +8,19 @@ const App = () => {
 
 
 
-  // 🔍 Filter logic
+  //  Filter logic
+  
   const filteredApps = app.filter((singleApp) =>
     singleApp.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-
- 
   if (loading) {
     return <h1 className="text-center text-xl font-semibold mt-20">Loading...</h1>;
   }
 
   return (
     <div className="text-center px-4 ">
+
       {/* ---------- Heading ---------- */}
       <h1 className="text-[40px] font-bold text-black mt-10">Our All Applications</h1>
       <p className="text-[18px] font-light text-gray-400 mt-2">
@@ -33,7 +33,7 @@ const App = () => {
           <span className="text-black">({filteredApps.length})</span> Apps Found
         </p>
 
-        <div className="relative w-full border-black border-2 rounded-lg  md:w-80 max-w-[1300px]">
+        <div className="relative w-full border-purple-600 border-1 rounded-lg  md:w-80 max-w-[1300px]">
           <input
             type="search"
             placeholder="Search App..."

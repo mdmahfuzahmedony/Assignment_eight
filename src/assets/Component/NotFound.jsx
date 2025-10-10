@@ -8,10 +8,10 @@ const NotFound = () => {
         <div className="flex justify-center items-center">
           <img src={notfound} alt="" />
         </div>
-        <p className="text-center text-[30px] font-bold mt-4">
+        <p className="text-center text-[30px] font-bold mt-4 text-black">
           OPPS!! APP NOT FOUND
         </p>
-        <p className="text-center text-[16px] ">
+        <p className="text-center text-[16px] text-black ">
           The App you are requesting is not found on our system. please try
           another apps
         </p>

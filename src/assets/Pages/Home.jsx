@@ -148,9 +148,7 @@ const Home = () => {
           <NavLink
             to={"/app"}
             className="py-2 px-7 rounded-lg bg-purple-500 text-white"
-          >
-            {" "}
-            All Apps
+          >Show All
           </NavLink>
         </div>
       </div>
