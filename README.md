@@ -1,16 +1,99 @@
-# React + Vite
+# Assignment Eight — Hero io
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live demo:** [https://assingment8.pages.dev/](https://assingment8.pages.dev/)
 
-Currently, two official plugins are available:
+**Repository:** [https://github.com/mdmahfuzahmedony/Assignment_eight](https://github.com/mdmahfuzahmedony/Assignment_eight)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A simple frontend project (React / Vite / Tailwind) built as Assignment Eight. This repo contains the client-side code and a live deploy available at the link above.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Responsive layout
+* Navigation and pages for services
+* Simple contact / booking UI (static)
+* Built with modern tooling (Vite + React + Tailwind)
+
+---
+
+## Screenshot
+
+*(Add an image here if you want — paste a hosted image URL or screenshot)*
+
+---
+
+## Installation (Run locally)
+
+Follow these steps to run the project on your machine:
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/mdmahfuzahmedony/Assignment_eight.git
+cd Assignment_eight
+```
+
+2. **Install dependencies**
+
+```bash
+# using npm
+npm install
+
+# or using pnpm
+pnpm install
+
+# or using yarn
+yarn
+```
+
+3. **Run the dev server**
+
+```bash
+npm run dev
+# or
+pnpm dev
+# or
+yarn dev
+```
+
+4. **Open in browser**
+
+Visit `http://localhost:5173` (or the port Vite shows in your terminal).
+
+5. **Build for production**
+
+```bash
+npm run build
+# then to preview
+npm run preview
+```
+
+---
+
+## How to add this README to your GitHub repo
+
+1. Open your repository on GitHub.
+2. Click **Add file → Create new file** (or edit existing `README.md`).
+3. Name the file `README.md` (or paste into the existing one) and copy the contents of this file into the editor.
+4. Commit the change.
+
+Or from your local machine:
+
+```bash
+# create README locally
+cp README_for_Assignment_Eight.md README.md
+git add README.md
+git commit -m "Add project README"
+git push
+```
+
+---
+
+## Contributing
+
+If you want others to contribute, ask them to fork the repo or open issues / PRs. Add a CONTRIBUTING.md if needed.
+
+
